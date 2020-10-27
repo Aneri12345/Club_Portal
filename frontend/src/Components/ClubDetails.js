@@ -8,19 +8,19 @@ function RenderClubs(props){
        console.log('in map');
         return(
             <div>
-                    <Jumbotron className="border-dark">
-                        <h1 className="d-flex justify-content-center">{club.name} </h1>
-                        <div className='row mt-4 ml-4'>
-                            <img src={club.secretaryImage} className="img-fluid img-circle " width="15%" height="15%" />
-                            <div className="m-4">
-                                <h5>Designation/Post: Club Secretary</h5><br/>
-                                <h5 >Name : {club.secretaryName}</h5><br/>
-                                <h5 >Email: {club.email}</h5><br/>
-                                <h5>Follow us on: <a href={club.link} className="text-primary deco-none"><span className="fa fa-instagram fa-lg"></span></a></h5>
-                            </div>
+                <Jumbotron className="border-dark">
+                    <h1 className="d-flex justify-content-center">{club.name} </h1>
+                    <div className='row mt-4 ml-4'>
+                        <img src={club.secretaryImage} className="img-fluid"/>
+                        <div className="m-4">
+                            <h5>Designation/Post: Club Secretary</h5><br/>
+                            <h5 >Name : {club.secretaryName}</h5><br/>
+                            <h5 >Email: {club.email}</h5><br/>
+                            <h5>Follow us on: <a href={club.link} className="text-primary deco-none"><span className="fa fa-instagram fa-lg"></span></a></h5>
                         </div>
-                        <p className="m-4">{club.description}</p>
-                    </Jumbotron>
+                    </div>
+                    <p className="m-4">{club.description}</p>
+                </Jumbotron>
             </div>
         );
    });

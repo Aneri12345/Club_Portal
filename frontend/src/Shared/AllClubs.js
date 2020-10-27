@@ -1,6 +1,7 @@
-const allClubs = [
+export const allClubs = [
     {
         id: 0,
+        nickName: 'dance',
         name: 'Dance Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/danceLogo.png',
@@ -12,6 +13,7 @@ const allClubs = [
     },
     {
         id: 1,
+        nickName: 'food',
         name: 'Food Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/food.jpg',
@@ -23,6 +25,7 @@ const allClubs = [
     },
     {
         id: 2,
+        nickName: 'pclub',
         name: 'Pclub',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/pclubLogo.png',
@@ -34,6 +37,7 @@ const allClubs = [
     },
     {
         id: 3,
+        nickName: 'entrepreneur',
         name: 'Entrepreneur Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/entrepreneurLogo.png',
@@ -45,6 +49,7 @@ const allClubs = [
     },
     {
         id: 4,
+        nickName: 'sports',
         name: 'Sports Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/sport.jpg',
@@ -56,6 +61,7 @@ const allClubs = [
     },
     {
         id: 5,
+        nickName: 'fitness',
         name: 'Fitness Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/fitnessLogo.png',
@@ -67,6 +73,7 @@ const allClubs = [
     },
     {
         id: 6,
+        nickName: 'photography',
         name: 'Photography Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/photography.png',
@@ -78,6 +85,7 @@ const allClubs = [
     },
     {
         id: 7,
+        nickName: 'managment',
         name: 'The Management Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/managementLogo.jpg',
@@ -89,6 +97,7 @@ const allClubs = [
     },
     {
         id: 8,
+        nickName: 'quiz',
         name: 'Quiz Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/quiz.jpg',
@@ -100,6 +109,7 @@ const allClubs = [
     },
     {
         id: 9,
+        nickName: 'magazine',
         name: 'Magazine Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/magazine.jpg',
@@ -111,6 +121,7 @@ const allClubs = [
     },
     {
         id: 10,
+        nickName: 'environment',
         name: 'Environment Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/environment.jpg',
@@ -122,6 +133,7 @@ const allClubs = [
     },
     {
         id: 11,
+        nickName: 'fineArts',
         name: 'Fine Arts Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/fineArts.png',
@@ -133,6 +145,7 @@ const allClubs = [
     },
     {
         id: 12,
+        nickName: 'literary',
         name: 'Literary Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/literaryLogo.png',
@@ -144,6 +157,7 @@ const allClubs = [
     },
     {
         id: 13,
+        nickName: 'ssf',
         name: 'Social Service Forum',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/socialService.jpg',
@@ -155,6 +169,7 @@ const allClubs = [
     },
     {
         id: 14,
+        nickName: 'theater',
         name: 'Theater',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/theater.jpg',
@@ -166,6 +181,7 @@ const allClubs = [
     },
     {
         id: 15,
+        nickName: 'heritage',
         name: 'Heritage Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/heritage.jpg',
@@ -177,6 +193,7 @@ const allClubs = [
     },
     {
         id: 16,
+        nickName: 'music',
         name: 'Music Club',
         image: 'assets/images/dance.jpg',
         logo: 'assets/images/music.jpg',
