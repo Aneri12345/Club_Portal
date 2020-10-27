@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Form, FormGroup, Input, Label, Button, Card,CardBody,Container, FormFeedback} from 'reactstrap';
+import {Form, FormGroup, CardHeader, Input, Label, Button, Card,CardBody,Container, FormFeedback} from 'reactstrap';
 import axios from 'axios';
 import Verify from './Verify';
 import { Redirect } from 'react-router-dom';
@@ -134,47 +134,59 @@ class SignUp extends Component{
             )
         } else {
             return (
-                <Container className="d-flex justify-content-center">
-                <Card className="col-4">
+                <div className="container d-flex justify-content-center">
+                <Card className="col-md-6">
+                    <CardHeader style={{backgroundColor: "white"}}><div className="d-flex justify-content-center">Welcome</div></CardHeader>
                     <CardBody>
-                        <Form className="d-flex justify-content-center">
+                        <Form>
                             <FormGroup>
                                 <Label htmlFor="firstName">First Name</Label>
                                 <Input className="mt-2 mb-2" type="text" name="firstName" onChange={this.handleInputChange} placeholder="First Name" id="firstName" 
                                 onBlur={this.handlerBlur('firstName')} valid={errors.firstName === ''} invalid={errors.firstName !== ''} onChange={this.handleInputChange} />
                                 <FormFeedback>{errors.firstName}</FormFeedback>
-    
+                            </FormGroup>
+
+                            <FormGroup>
                                 <Label htmlFor="firstName">Last Name</Label>
                                 <Input className="mt-2 mb-2" type="text" name="lastName" onChange={this.handleInputChange} placeholder="Last Name" id="lastName"
                                 onBlur= {this.handlerBlur('lastName')} valid={errors.lastName ===''} invalid={errors.lastName!==''} onChange={this.handleInputChange}/>
                                 <FormFeedback>{errors.lastName}</FormFeedback>
-    
+                            </FormGroup>
+                            
+                            <FormGroup>
                                 <Label htmlFor="roll">AU roll no.</Label>
                                 <Input className="mt-2 mb-2" type="number" name="roll" onChange={this.handleInputChange} placeholder="AU roll no." id="roll"
                                 onBlur={this.handlerBlur('roll')} valid={errors.roll === ''} invalid={errors.roll !== ''} onChange={this.handleInputChange} />
                                 <FormFeedback>{errors.roll}</FormFeedback>
-    
+                            </FormGroup>
+                            
+                            <FormGroup>
                                 <Label htmlFor="email">E-mail</Label>
                                 <Input className="mt-2 mb-2" type="email" name="email" pattern="[a-z0-9._%+-]+@ahduni.edu.in" onChange={this.handleInputChange} placeholder="Ahd mail" id="email"
                                 onBlur={this.handlerBlur('email')} valid={errors.email === '' || this.state.signUpError} invalid={errors.email !== '' || this.state.signUpError !== ''} onChange={this.handleInputChange} />
                                 <FormFeedback>{errors.email} {this.state.signUpError}</FormFeedback>
-    
+                            </FormGroup>
+
+                            <FormGroup>
                                 <Label htmlFor="password">Password</Label>
                                 <Input className="mt-2 mb-2" type="password" name="password" onChange={this.handleInputChange} placeholder="Password" id="password"
                                 onBlur={this.handlerBlur('password')} valid={errors.password === ''} invalid={errors.password !== ''} onChange={this.handleInputChange} />
                                 <FormFeedback>{errors.password}</FormFeedback>
-                                
+                            </FormGroup>
+
+                            <FormGroup>
                                 <Label htmlFor="password">Confirm Password</Label>
                                 <Input className="mt-2 mb-2" type="password" name="confirmPassword" onChange={this.handleInputChange} placeholder="Confirm Password" id="ConfirmPassword"
                                 onBlur={this.handlerBlur('confirmPassword')} valid={errors.confirmPassword === ''} invalid={errors.confirmPassword !== ''} onChange={this.handleInputChange} />
                                 <FormFeedback>{errors.confirmPassword}</FormFeedback> 
-                                <Button className="btn btn-success btn-md m-2"  onClick={this.handleSignUp}>Sign Up</Button><br/>
-                                
+                                <div className="d-flex justify-content-center">
+                                    <Button className="btn btn-success btn-md m-2"  onClick={this.handleSignUp}>Sign Up</Button><br/>
+                                </div>
                             </FormGroup>
                         </Form>
                     </CardBody>
                 </Card>
-                </Container>
+                </div>
                 )
             }
         }

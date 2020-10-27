@@ -64,8 +64,8 @@ class Login extends Component{
         else{
             return (
                 <div className="container d-flex justify-content-center">
-                    <Card className="col-4 mt-5">
-                        <CardHeader><div className="d-flex justify-content-center">Welcome Back</div></CardHeader>
+                    <Card className="col-md-6 mt-5">
+                        <CardHeader style={{backgroundColor: "white"}}><div className="d-flex justify-content-center">Welcome Back</div></CardHeader>
                         <CardBody>
                             <Form>
                                 <FormGroup>
@@ -80,11 +80,7 @@ class Login extends Component{
                                 <FormGroup>
                                     <div className="d-flex justify-content-center">
                                         <Button className="btn btn-success btn-md" onClick={this.handleLoginSubmit}>Login</Button><br/>
-                                    </div>
-                                </FormGroup>
-                                <FormGroup>
-                                    <div className="d-flex justify-content-center">
-                                        <Button className="btn btn-sm" color="primary">Sign Up</Button><br/>
+                                        <Button className="btn ml-2 btn-sm" color="primary">Sign Up</Button><br/>
                                     </div>
                                 </FormGroup>
                             </Form>

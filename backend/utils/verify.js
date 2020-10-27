@@ -51,6 +51,8 @@ exports.verify = (req, res) => {
                                     data: {},
                                 });
                             } else {
+                                res.cookie('cookie', email, { maxAge: 60 * 60 * 1000, httpOnly: false, path: '/' });
+                                req.session.user = email;
                                 res.send({
                                     status: 1,
                                     msg: 'Successfull Verification',

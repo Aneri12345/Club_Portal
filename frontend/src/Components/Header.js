@@ -28,11 +28,10 @@ class Header extends Component{
             <div>
                 <Navbar className="color-nav" dark expand="md">
                     <div className="container">
-                        <NavbarBrand href='/'>AU Clubs</NavbarBrand>
-                        <div className="d-flex justify-content-end">
+                        <NavbarBrand className="mr-auto" href='/'>AU Clubs</NavbarBrand>
                             <NavbarToggler onClick={this.toggleNav}/>
                             <Collapse isOpen={this.state.isNavOpen} className="dark" navbar>
-                                <Nav navbar>
+                                <Nav navbar className="ml-auto">
                                     <NavItem>
                                         <NavLink onClick={this.toggleNav} className="nav-link " to="/home">
                                             <span className="fa fa-home fa-lg mr-2"></span>Home
@@ -60,7 +59,6 @@ class Header extends Component{
                                     </NavItem>
                                 </Nav>
                             </Collapse>
-                        </div>
                     </div>
                 </Navbar>
             </div>
