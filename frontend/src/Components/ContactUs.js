@@ -8,7 +8,7 @@ function RenderUs(props){
                 <Card className="col-10 m-2">
                     <h2  className="d-flex justify-content-center">{us.name}</h2>
                     <div className="row ml-5 d-flex justify-content-start">
-                        <img src={us.image} className="img-fluid mb-3" width="15%" height="15%" />
+                        <img src={us.image} className="img-fluid mb-3"/>
                         <div className="m-3">
                             <h5>Role: Website Creator</h5><br/>
                             <h5>Email: {us.email}</h5><br/>

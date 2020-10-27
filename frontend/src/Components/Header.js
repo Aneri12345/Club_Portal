@@ -26,41 +26,43 @@ class Header extends Component{
     render(){
         return(
             <div>
-                    <Navbar className="color-nav" dark expand="md">
-                        <div className="container">
-                            <NavbarBrand>AU Clubs</NavbarBrand>
+                <Navbar className="color-nav" dark expand="md">
+                    <div className="container">
+                        <NavbarBrand href='/'>AU Clubs</NavbarBrand>
+                        <div className="d-flex justify-content-end">
                             <NavbarToggler onClick={this.toggleNav}/>
-                            <Collapse isOpen={this.state.isNavOpen} className="d-flex justify-content-end" navbar>
+                            <Collapse isOpen={this.state.isNavOpen} className="dark" navbar>
                                 <Nav navbar>
                                     <NavItem>
-                                        <NavLink className="nav-link " to="/home">
+                                        <NavLink onClick={this.toggleNav} className="nav-link " to="/home">
                                             <span className="fa fa-home fa-lg mr-2"></span>Home
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink className="nav-link " to="/login">
+                                        <NavLink onClick={this.toggleNav} className="nav-link " to="/login">
                                             <span className="fa fa-sign-in fa-lg mr-2"></span>Login
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink className="nav-link " to="/signUp">
+                                        <NavLink onClick={this.toggleNav} className="nav-link " to="/signUp">
                                             <span className="fa fa-user fa-lg mr-2"></span>Sign Up
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink className="nav-link " to="/clubDetails">
+                                        <NavLink onClick={this.toggleNav} className="nav-link " to="/clubDetails">
                                             <span className="fa fa-star fa-lg mr-2"></span>Clubs
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink className="nav-link " to="/contactUs">
+                                        <NavLink onClick={this.toggleNav} className="nav-link " to="/contactUs">
                                             <span className="fa fa-phone fa-lg mr-2"></span>Contact Us
                                         </NavLink>
                                     </NavItem>
                                 </Nav>
                             </Collapse>
                         </div>
-                    </Navbar>
+                    </div>
+                </Navbar>
             </div>
         );
     }
