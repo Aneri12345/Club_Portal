@@ -34,22 +34,22 @@ class HeaderLoggedin extends Component{
                             <Collapse isOpen={this.state.isNavOpen} className="d-flex justify-content-end" navbar>
                                 <Nav navbar>
                                     <NavItem>
-                                        <NavLink className="nav-link " to="/home">
+                                        <NavLink onClick={this.toggleNav} className="nav-link " to="/home">
                                             <span className="fa fa-home fa-lg mr-2"></span>Home
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink className="nav-link " to="/clubDetails">
+                                        <NavLink onClick={this.toggleNav} className="nav-link " to="/clubDetails">
                                             <span className="fa fa-star fa-lg mr-2"></span>Clubs
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink className="nav-link " to="/contactUs">
+                                        <NavLink onClick={this.toggleNav} className="nav-link " to="/contactUs">
                                             <span className="fa fa-phone fa-lg mr-2"></span>Contact Us
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink className="nav-link " to="/">
+                                        <NavLink onClick={this.toggleNav} className="nav-link " to="/">
                                             <span className="fa fa-sign-out fa-lg mr-2"></span>Sign Out
                                         </NavLink>
                                     </NavItem>
